@@ -43,14 +43,16 @@ ol li p {
 
     flex-direction: column;
     display: flex;
-    align-items: center;
+    align-items: flex-start; 
     justify-content: space-between;
 }
 
 .header-left {
     display: flex;
     align-items: center;
-    gap: 70px;
+    gap: 15px;
+
+    width: 100%;
 
 }
 
@@ -59,6 +61,7 @@ ol li p {
     margin: 3px;
     width: 100px;
     height: 100px;
+    margin-right: auto; 
 }
 
 .logo:hover {
@@ -77,7 +80,7 @@ ol li p {
     display: flex; 
     flex-direction:column;
 
-    margin-right: 290px;
+    width: 100%;
 
 }
 
@@ -92,6 +95,7 @@ ol li p {
 
 .namestr {
     padding:10px;
+    margin-left: auto;
 }
 
 .namestr h1 {
@@ -220,11 +224,13 @@ tr:hover {
 .content-header h2 {
     margin-top: 40px;
 }
+
 @media screen and (min-width: 768px) {
   .header {
     height: 120px;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 
   .header-left {
@@ -282,5 +288,9 @@ tr:hover {
     border-radius: 20px;
 }
 
+.namestr {
+    padding:10px;
+    margin-left: 0;
 }
 
+}
